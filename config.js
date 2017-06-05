@@ -2,29 +2,23 @@
   const GATEKEEPER_KEY = '35ae5b7bf8f0ff2613134935ce6b4c1e';
 
   return {
-    geocoders: {
-      forward: {
-        ais: {
-          type: 'json',
+    geocoder: {
+      methods: {
+        search: {
           url(input) {
             const inputEncoded = encodeURIComponent(input);
-            return `//api.phila.gov/ais/v1/search/${inputEncoded}`;
+            return `//api.phila.gov/ais/v1/search/${inputEncoded}`
           },
-          options: {
-            params: {
-              gatekeeperKey: GATEKEEPER_KEY
-            }
+          params: {
+            gatekeeperKey: GATEKEEPER_KEY
           }
-        }
-      },
-      reverse: {
-        pwdParcels: {
-          type: 'esri-polygon',
-          url: '//gis.phila.gov/arcgis/rest/services/Water/pv_data_geodb2/MapServer/0'
         },
-        dorParcels: {
-          type: 'esri-polygon',
-          url: '//gis.phila.gov/arcgis/rest/services/DOR_ParcelExplorer/rtt_basemap/MapServer/24'
+        reverseGeocode: {
+          // TODO uri encode
+          url: (input) => `//api.phila.gov/ais/v1/reverse_geocode/${input}`,
+          params: {
+            gatekeeperKey: GATEKEEPER_KEY
+          }
         }
       }
     },
