@@ -180,11 +180,11 @@
       dynamicMapLayers: {
         stormwater: {
           url: '//gis.phila.gov/arcgis/rest/services/Water/pv_data/MapServer',
-          opacity: 0.5
+          opacity: 1.0
         },
         zoning: {
           url: '//gis.phila.gov/arcgis/rest/services/PhilaGov/ZoningMap/MapServer',
-          opacity: 0.5
+          opacity: 1.0
         }
       },
       featureLayers: {
