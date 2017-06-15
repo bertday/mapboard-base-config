@@ -185,7 +185,7 @@
         zoning: {
           url: '//gis.phila.gov/arcgis/rest/services/PhilaGov/ZoningMap/MapServer',
           opacity: 1.0
-        }
+        },
       },
       featureLayers: {
         dorParcels: {
@@ -193,6 +193,12 @@
         },
         pwdParcels: {
           url: '//gis.phila.gov/arcgis/rest/services/Water/pv_data_geodb2/MapServer/0',
+        },
+        vacantLand: {
+          url: '//services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/Vacant_Indicators_Land/FeatureServer/0'
+        },
+        vacantBuilding: {
+          url: '//services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/Vacant_Indicators_Bldg/FeatureServer/0'
         }
       },
       tools: {
