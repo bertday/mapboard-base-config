@@ -2,29 +2,23 @@
   const GATEKEEPER_KEY = '35ae5b7bf8f0ff2613134935ce6b4c1e';
 
   return {
-    geocoders: {
-      forward: {
-        ais: {
-          type: 'json',
+    geocoder: {
+      methods: {
+        search: {
           url(input) {
             const inputEncoded = encodeURIComponent(input);
-            return `//api.phila.gov/ais/v1/search/${inputEncoded}`;
+            return `//api.phila.gov/ais/v1/search/${inputEncoded}`
           },
-          options: {
-            params: {
-              gatekeeperKey: GATEKEEPER_KEY
-            }
+          params: {
+            gatekeeperKey: GATEKEEPER_KEY
           }
-        }
-      },
-      reverse: {
-        pwdParcels: {
-          type: 'esri-polygon',
-          url: '//gis.phila.gov/arcgis/rest/services/Water/pv_data_geodb2/MapServer/0'
         },
-        dorParcels: {
-          type: 'esri-polygon',
-          url: '//gis.phila.gov/arcgis/rest/services/DOR_ParcelExplorer/rtt_basemap/MapServer/24'
+        reverseGeocode: {
+          // TODO uri encode
+          url: (input) => `//api.phila.gov/ais/v1/reverse_geocode/${input}`,
+          params: {
+            gatekeeperKey: GATEKEEPER_KEY
+          }
         }
       }
     },
@@ -55,7 +49,8 @@
             'parcels'
           ],
           type: 'imagery',
-          year: 2016
+          year: 2016,
+          attribution: 'Imagery 2016'
         },
         imagery2015: {
           url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityImagery_2015_3in/MapServer',
@@ -64,7 +59,8 @@
             'parcels'
           ],
           type: 'imagery',
-          year: 2015
+          year: 2015,
+          attribution: 'Imagery 2015'
         },
         imagery2012: {
           url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityImagery_2012_3in/MapServer',
@@ -73,7 +69,8 @@
             'parcels'
           ],
           type: 'imagery',
-          year: 2012
+          year: 2012,
+          attribution: 'Imagery 2012'
         },
         imagery2010: {
           url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityImagery_2010_3in/MapServer',
@@ -82,7 +79,8 @@
             'parcels'
           ],
           type: 'imagery',
-          year: 2010
+          year: 2010,
+          attribution: 'Imagery 2010'
         },
         imagery2008: {
           url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityImagery_2008_3in/MapServer',
@@ -91,7 +89,8 @@
             'parcels'
           ],
           type: 'imagery',
-          year: 2008
+          year: 2008,
+          attribution: 'Imagery 2008'
         },
         imagery2004: {
           url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityImagery_2004_6in/MapServer',
@@ -100,7 +99,8 @@
             'parcels'
           ],
           type: 'imagery',
-          year: 2004
+          year: 2004,
+          attribution: 'Imagery 2004'
         },
         imagery1996: {
           url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityImagery_1996_6in/MapServer',
@@ -109,19 +109,50 @@
             'parcels'
           ],
           type: 'imagery',
-          year: 1996
+          year: 1996,
+          attribution: 'Imagery 1996'
         },
-        landUse1962: {
+        historic1962: {
           url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1962/MapServer',
           tiledLayers: [],
           type: 'historic',
-          year: 1962
+          year: 1962,
+          attribution: 'Historic Land Use 1962'
         },
-        landUse1942: {
+        historic1942: {
           url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1942/MapServer',
           tiledLayers: [],
           type: 'historic',
-          year: 1942
+          year: 1942,
+          attribution: 'Historic Land Use 1942'
+        },
+        historic1910: {
+          url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricBromleyAtlas_1910/MapServer',
+          tiledLayers: [],
+          type: 'historic',
+          year: 1910,
+          attribution: 'Historic Bromley Atlas 1910'
+        },
+        historic1895: {
+          url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricBromleyAtlas_1895/MapServer',
+          tiledLayers: [],
+          type: 'historic',
+          year: 1895,
+          attribution: 'Historic Bromley Atlas 1895'
+        },
+        historic1875: {
+          url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricGMHopkinsAtlas_1875/MapServer',
+          tiledLayers: [],
+          type: 'historic',
+          year: 1875,
+          attribution: 'Historic G.M. Hopkins Atlas 1875'
+        },
+        historic1860: {
+          url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricHexamerLocherAtlas_1860/MapServer',
+          tiledLayers: [],
+          type: 'historic',
+          year: 1860,
+          attribution: 'Historic Hexamer Locher Atlas 1860'
         },
       },
       tiledLayers: {
@@ -138,6 +169,8 @@
         imageryBasemapLabels: {
           url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityImagery_Labels/MapServer',
           zIndex: '3',
+          attribution: 'overwrite',
+          // attribution: ' ',
         },
         parcels: {
           url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/ParcleTile/MapServer',
