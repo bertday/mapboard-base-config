@@ -199,14 +199,16 @@
           color: 'orange',
           fillColor: 'orange',
           fillOpacity: 0.5,
-          weight: 1
+          weight: 1,
+          minZoom: 17
         },
         vacantBuilding: {
           url: '//services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/Vacant_Indicators_Bldg/FeatureServer/0',
           color: 'purple',
           fillColor: 'purple',
           fillOpacity: 0.5,
-          weight: 1
+          weight: 1,
+          minZoom: 17
         }
       },
       tools: {
