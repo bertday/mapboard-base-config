@@ -189,16 +189,24 @@
       },
       featureLayers: {
         dorParcels: {
-          url: '//gis.phila.gov/arcgis/rest/services/DOR_ParcelExplorer/rtt_basemap/MapServer/24'
+          url: '//gis.phila.gov/arcgis/rest/services/DOR_ParcelExplorer/rtt_basemap/MapServer/24',
         },
         pwdParcels: {
           url: '//gis.phila.gov/arcgis/rest/services/Water/pv_data_geodb2/MapServer/0',
         },
         vacantLand: {
-          url: '//services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/Vacant_Indicators_Land/FeatureServer/0'
+          url: '//services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/Vacant_Indicators_Land/FeatureServer/0',
+          color: 'orange',
+          fillColor: 'orange',
+          fillOpacity: 0.5,
+          weight: 1
         },
         vacantBuilding: {
-          url: '//services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/Vacant_Indicators_Bldg/FeatureServer/0'
+          url: '//services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/Vacant_Indicators_Bldg/FeatureServer/0',
+          color: 'purple',
+          fillColor: 'purple',
+          fillOpacity: 0.5,
+          weight: 1
         }
       },
       tools: {
