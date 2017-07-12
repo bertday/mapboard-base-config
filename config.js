@@ -42,6 +42,16 @@
           ],
           type: 'featuremap'
         },
+        imagery2017: {
+          url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityImagery_2017_3in/MapServer',
+          tiledLayers: [
+            'imageryBasemapLabels',
+            'parcels'
+          ],
+          type: 'imagery',
+          year: 2017,
+          attribution: 'Imagery 2017'
+        },
         imagery2016: {
           url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityImagery_2016_3in/MapServer',
           tiledLayers: [
