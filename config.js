@@ -187,7 +187,7 @@
           opacity: 1.0
         },
         regmaps: {
-          url: '//gis.phila.gov/arcgis/rest/services/DOR_ParcelExplorer/rtt_basemap/MapServer/'
+          url: '//gis.phila.gov/arcgis/rest/services/DOR_ParcelExplorer/rtt_basemap/MapServer/',
           opacity: 0.5
         }
       },
