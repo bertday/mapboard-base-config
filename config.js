@@ -186,10 +186,10 @@
           url: '//gis.phila.gov/arcgis/rest/services/PhilaGov/ZoningMap/MapServer',
           opacity: 1.0
         },
-        regmap: {
-          url: '//gis.phila.gov/arcgis/rest/services/DOR_ParcelExplorer/rtt_basemap/MapServer/0',
-          opacity: 1.0,
-        },
+        regmaps: {
+          url: '//gis.phila.gov/arcgis/rest/services/DOR_ParcelExplorer/rtt_basemap/MapServer/'
+          opacity: 0.5
+        }
       },
       featureLayers: {
         dorParcels: {
