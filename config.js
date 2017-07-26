@@ -3,24 +3,24 @@
 
   return {
     geocoder: {
-      methods: {
-        search: {
-          url(input) {
-            const inputEncoded = encodeURIComponent(input);
-            return `//api.phila.gov/ais/v1/search/${inputEncoded}`
-          },
-          params: {
-            gatekeeperKey: GATEKEEPER_KEY
-          }
+      // methods: {
+      forward: {
+        url(input) {
+          const inputEncoded = encodeURIComponent(input);
+          return `//api.phila.gov/ais/v1/search/${inputEncoded}`
         },
-        reverseGeocode: {
-          // TODO uri encode
-          url: (input) => `//api.phila.gov/ais/v1/reverse_geocode/${input}`,
-          params: {
-            gatekeeperKey: GATEKEEPER_KEY
-          }
+        params: {
+          gatekeeperKey: GATEKEEPER_KEY
+        }
+      },
+      reverse: {
+        // TODO uri encode
+        url: (input) => `//api.phila.gov/ais/v1/reverse_geocode/${input}`,
+        params: {
+          gatekeeperKey: GATEKEEPER_KEY
         }
       }
+      // }
     },
     map: {
       center: [39.953338, -75.163471],
