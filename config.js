@@ -1,13 +1,12 @@
-(() => {
-  const GATEKEEPER_KEY = '35ae5b7bf8f0ff2613134935ce6b4c1e';
+(function () {
+  var GATEKEEPER_KEY = '35ae5b7bf8f0ff2613134935ce6b4c1e';
 
   return {
     geocoder: {
-      // methods: {
       forward: {
-        url(input) {
-          const inputEncoded = encodeURIComponent(input);
-          return `//api.phila.gov/ais/v1/search/${inputEncoded}`
+        url: function (input) {
+          var inputEncoded = encodeURIComponent(input);
+          return '//api.phila.gov/ais/v1/search/' + inputEncoded;
         },
         params: {
           gatekeeperKey: GATEKEEPER_KEY
@@ -15,12 +14,13 @@
       },
       reverse: {
         // TODO uri encode
-        url: (input) => `//api.phila.gov/ais/v1/reverse_geocode/${input}`,
+        url: function (input) {
+          return '//api.phila.gov/ais/v1/reverse_geocode/' + input;
+        },
         params: {
           gatekeeperKey: GATEKEEPER_KEY
         }
       }
-      // }
     },
     map: {
       center: [39.953338, -75.163471],
