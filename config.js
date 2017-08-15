@@ -199,7 +199,11 @@
         regmaps: {
           url: '//gis.phila.gov/arcgis/rest/services/DOR_ParcelExplorer/rtt_basemap/MapServer/',
           opacity: 0.5
-        }
+        },
+        311: {
+          url: '//192.168.103.144:6080/arcgis/rest/services/GSG/GIS311_365_nosym/MapServer/',
+          opacity: 1.0
+        },
       },
       featureLayers: {
         dorParcels: {
