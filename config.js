@@ -165,6 +165,14 @@
           attribution: 'Historic Hexamer Locher Atlas 1860'
         },
       },
+      imageryTypes: {
+        imagery: {
+          label: 'Imagery'
+        },
+        historic: {
+          label: 'Historic'
+        }
+      },
       tiledLayers: {
         cityBasemapLabels: {
           // type: 'labels',
