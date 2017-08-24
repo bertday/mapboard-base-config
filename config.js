@@ -44,6 +44,7 @@
         },
         imagery2017: {
           url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityImagery_2017_3in/MapServer',
+          label: '2017',
           tiledLayers: [
             'imageryBasemapLabels',
             'parcels'
@@ -54,6 +55,7 @@
         },
         imagery2016: {
           url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityImagery_2016_3in/MapServer',
+          label: '2016',
           tiledLayers: [
             'imageryBasemapLabels',
             'parcels'
@@ -64,6 +66,7 @@
         },
         imagery2015: {
           url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityImagery_2015_3in/MapServer',
+          label: '2015',
           tiledLayers: [
             'imageryBasemapLabels',
             'parcels'
@@ -74,6 +77,7 @@
         },
         imagery2012: {
           url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityImagery_2012_3in/MapServer',
+          label: '2012',
           tiledLayers: [
             'imageryBasemapLabels',
             'parcels'
@@ -84,6 +88,7 @@
         },
         imagery2010: {
           url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityImagery_2010_3in/MapServer',
+          label: '2010',
           tiledLayers: [
             'imageryBasemapLabels',
             'parcels'
@@ -94,6 +99,7 @@
         },
         imagery2008: {
           url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityImagery_2008_3in/MapServer',
+          label: '2008',
           tiledLayers: [
             'imageryBasemapLabels',
             'parcels'
@@ -104,6 +110,7 @@
         },
         imagery2004: {
           url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityImagery_2004_6in/MapServer',
+          label: '2004',
           tiledLayers: [
             'imageryBasemapLabels',
             'parcels'
@@ -114,6 +121,7 @@
         },
         imagery1996: {
           url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityImagery_1996_6in/MapServer',
+          label: '1996',
           tiledLayers: [
             'imageryBasemapLabels',
             'parcels'
@@ -124,6 +132,7 @@
         },
         historic1962: {
           url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1962/MapServer',
+          label: '1962',
           tiledLayers: [],
           type: 'historic',
           year: 1962,
@@ -131,6 +140,7 @@
         },
         historic1942: {
           url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricLandUse_1942/MapServer',
+          label: '1942',
           tiledLayers: [],
           type: 'historic',
           year: 1942,
@@ -138,6 +148,7 @@
         },
         historic1910: {
           url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricBromleyAtlas_1910/MapServer',
+          label: '1910',
           tiledLayers: [],
           type: 'historic',
           year: 1910,
@@ -145,6 +156,7 @@
         },
         historic1895: {
           url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricBromleyAtlas_1895/MapServer',
+          label: '1895',
           tiledLayers: [],
           type: 'historic',
           year: 1895,
@@ -152,6 +164,7 @@
         },
         historic1875: {
           url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricGMHopkinsAtlas_1875/MapServer',
+          label: '1875',
           tiledLayers: [],
           type: 'historic',
           year: 1875,
@@ -159,6 +172,7 @@
         },
         historic1860: {
           url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/HistoricHexamerLocherAtlas_1860/MapServer',
+          label: '1860',
           tiledLayers: [],
           type: 'historic',
           year: 1860,
