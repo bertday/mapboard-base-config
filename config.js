@@ -19,7 +19,8 @@
           return '//api.phila.gov/ais/v1/reverse_geocode/' + input;
         },
         params: {
-          gatekeeperKey: GATEKEEPER_KEY
+          gatekeeperKey: GATEKEEPER_KEY,
+          include_units: true
         }
       }
     },
