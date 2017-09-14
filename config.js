@@ -4,6 +4,7 @@
   return {
     geocoder: {
       forward: {
+        direction: 'forward',
         url: function (input) {
           var inputEncoded = encodeURIComponent(input);
           return '//api.phila.gov/ais/v1/search/' + inputEncoded;
@@ -14,6 +15,7 @@
         }
       },
       reverse: {
+        direction: 'reverse',
         // TODO uri encode
         url: function (input) {
           return '//api.phila.gov/ais/v1/reverse_geocode/' + input;
