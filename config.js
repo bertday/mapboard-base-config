@@ -29,7 +29,7 @@
     map: {
       center: [39.953338, -75.163471],
       minZoom: 11,
-      maxZoom: 20,
+      maxZoom: 21,
       zoom: 12,
       basemaps: {
         pwd: {
