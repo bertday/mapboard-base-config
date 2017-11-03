@@ -37,14 +37,16 @@
           tiledLayers: [
             'cityBasemapLabels'
           ],
-          type: 'featuremap'
+          type: 'featuremap',
+          attribution: 'Parcels: Philadelphia Water'
         },
         dor: {
           url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/DORBasemap/MapServer',
           tiledLayers: [
             'dorBasemapLabels'
           ],
-          type: 'featuremap'
+          type: 'featuremap',
+          attribution: 'Parcels: Department of Records'
         },
         imagery2017: {
           url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityImagery_2017_3in/MapServer',
