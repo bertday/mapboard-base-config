@@ -257,10 +257,10 @@
       },
       tools: {
         buffer: {
-          url: '//192.168.103.143:6080/arcgis/rest/services/Utilities/Geometry/GeometryServer/buffer'
+          url: '//gis.phila.gov/arcgis/rest/services/Geometry/GeometryServer/buffer'
         },
         distance: {
-          url: '//192.168.103.143:6080/arcgis/rest/services/Utilities/Geometry/GeometryServer/distance'
+          url: '//gis.phila.gov/arcgis/rest/services/Geometry/GeometryServer/distance'
         }
       }
     },
