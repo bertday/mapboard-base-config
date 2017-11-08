@@ -235,7 +235,8 @@
       },
       featureLayers: {
         dorParcels: {
-          url: '//gis.phila.gov/arcgis/rest/services/DOR_ParcelExplorer/rtt_basemap/MapServer/24',
+          url: '//gis.phila.gov/arcgis/rest/services/DOR/DOR_Parcel/MapServer/0',
+          // url: '//gis.phila.gov/arcgis/rest/services/DOR_ParcelExplorer/rtt_basemap/MapServer/24',
         },
         pwdParcels: {
           url: '//gis.phila.gov/arcgis/rest/services/Water/pv_data_geodb2/MapServer/0',
