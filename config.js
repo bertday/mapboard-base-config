@@ -222,8 +222,8 @@
           opacity: 1.0
         },
         zoning: {
-          // url: '//gis.phila.gov/arcgis/rest/services/PhilaGov/ZoningMap/MapServer',
-          url: '//services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/Zoning_BaseDistricts/FeatureServer/0',
+          url: '//gis.phila.gov/arcgis/rest/services/PhilaGov/ZoningMap/MapServer',
+          // url: '//services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/Zoning_BaseDistricts/FeatureServer/0',
           opacity: 1.0
         },
         regmaps: {
