@@ -222,11 +222,13 @@
           opacity: 1.0
         },
         zoning: {
-          url: '//gis.phila.gov/arcgis/rest/services/PhilaGov/ZoningMap/MapServer',
+          // url: '//gis.phila.gov/arcgis/rest/services/PhilaGov/ZoningMap/MapServer',
+          url: '//services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/Zoning_BaseDistricts/FeatureServer/0',
           opacity: 1.0
         },
         regmaps: {
-          url: '//gis.phila.gov/arcgis/rest/services/DOR_ParcelExplorer/rtt_basemap/MapServer/',
+          // url: '//gis.phila.gov/arcgis/rest/services/DOR_ParcelExplorer/rtt_basemap/MapServer/',
+          url: '//services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/MASTERMAPINDEX/FeatureServer/',
           opacity: 0.5
         },
         // 311: {
@@ -236,8 +238,8 @@
       },
       featureLayers: {
         dorParcels: {
-          // url: '//gis.phila.gov/arcgis/rest/services/DOR/DOR_Parcel/MapServer/0',
-          url: '//gis.phila.gov/arcgis/rest/services/DOR_ParcelExplorer/rtt_basemap/MapServer/24',
+          url: '//gis.phila.gov/arcgis/rest/services/DOR/DOR_Parcel/MapServer/0',
+          // url: '//gis.phila.gov/arcgis/rest/services/DOR_ParcelExplorer/rtt_basemap/MapServer/24',
         },
         pwdParcels: {
           url: '//gis.phila.gov/arcgis/rest/services/Water/pv_data_geodb2/MapServer/0',
