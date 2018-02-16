@@ -1,5 +1,5 @@
 (function () {
-  var GATEKEEPER_KEY = '82fe014b6575b8c38b44235580bc8b11';
+  // var GATEKEEPER_KEY = '82fe014b6575b8c38b44235580bc8b11';
 
   return {
     geocoder: {
