@@ -201,7 +201,7 @@
         },
         dorBasemapLabels: {
           // type: 'labels',
-          url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/DORBasemap_Labels_Test2/MapServer',
+          url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/DORBasemap_Labels/MapServer',
           zIndex: '3',
         },
         imageryBasemapLabels: {
