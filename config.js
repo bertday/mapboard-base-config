@@ -18,7 +18,7 @@
         zoom: 12,
         basemaps: {
           pwd: {
-            url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityBasemap/MapServer',
+            url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityBasemap_Clone/MapServer',
             tiledLayers: [
               'cityBasemapLabels'
             ],
@@ -181,7 +181,7 @@
         tiledLayers: {
           cityBasemapLabels: {
             // type: 'labels',
-            url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityBasemap_Labels/MapServer',
+            url: '//tiles.arcgis.com/tiles/fLeGjb7u4uXqeF9q/arcgis/rest/services/CityBasemap_Labels_Clone/MapServer',
             zIndex: '3',
           },
           dorBasemapLabels: {
